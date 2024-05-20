@@ -626,7 +626,7 @@ vite指定启动端口
 
 nginx运行后 到 usr/local/nginx.conf下了	
 
-cvm：ip：94.191.5.70
+
 
 ps -ef | grep 'nginx'
 
@@ -748,7 +748,7 @@ if($request_method = 'OPTION'){
 }
 ```
 
-os ~]# 139.186.143.206
+
 
 netstat -ntlp 端口查看
 
