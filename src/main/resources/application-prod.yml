@@ -12,13 +12,13 @@ spring:
   #mysql配置信息
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://1fb4a42c6bbe.c.methodot.com:31341/beihong
+    url: jdbc:mysql://线上数据库地址/beihong
     username: root
     password: root
   #redis配置
   redis:
-    port: 31458
-    host: 7fc47f6face8.c.methodot.com
+    port: 线上redis端口
+    host: 线上redis地址
     database: 1
   #session超时时间
   session:
