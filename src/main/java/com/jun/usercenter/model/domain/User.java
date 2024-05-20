@@ -70,6 +70,11 @@ public class User implements Serializable {
     private Date updateTime;
 
     /**
+     * 用户编号
+     */
+    private Integer planetCode;
+
+    /**
      * 是否删除
      * 逻辑位 标识是否是删除状态
      */
@@ -80,6 +85,10 @@ public class User implements Serializable {
      * 用户权限
      */
     private Integer role;
+    /**
+     * 标签 json 格式列表
+     */
+    private String tags;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

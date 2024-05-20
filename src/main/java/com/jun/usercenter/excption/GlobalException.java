@@ -1,11 +1,10 @@
 package com.jun.usercenter.excption;
 
 import com.jun.usercenter.common.ErrorCodeEnum;
-import com.jun.usercenter.model.domain.result.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
+import com.jun.usercenter.model.result.Result;
 /**
  * 全局异常捕获
  */

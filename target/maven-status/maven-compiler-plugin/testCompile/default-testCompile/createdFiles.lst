@@ -1,0 +1,8 @@
+com\jun\usercenter\UserCenterApplicationTest.class
+com\jun\usercenter\RedissonLockTest.class
+com\jun\usercenter\MPUpdateByIdTest.class
+com\jun\usercenter\RedisTest.class
+com\jun\usercenter\TeamStatusEnumTest.class
+com\jun\usercenter\ReadTest.class
+com\jun\usercenter\TableListener.class
+com\jun\usercenter\InsertUsersTest.class

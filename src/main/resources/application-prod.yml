@@ -1,0 +1,58 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+  servlet:
+    #指定接口全局api
+    context-path: /api
+
+# spring基本配置
+spring:
+  application:
+    name: user-center
+  #mysql配置信息
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1fb4a42c6bbe.c.methodot.com:31341/beihong
+    username: root
+    password: root
+  #redis配置
+  redis:
+    port: 31458
+    host: 7fc47f6face8.c.methodot.com
+    database: 1
+  #session超时时间
+  session:
+    timeout: 64800
+    store-type: redis
+
+
+mybatis-plus:
+ configuration:
+   map-underscore-to-camel-case: false
+   #sql执行日志
+   log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+ global-config:
+    db-config:
+      logic-delete-field: idDelete # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+#knife4j:
+#  enable: true
+#  openapi:
+#    title: user-center开发文档
+#    description: "开发接口，开发接口测试"
+#    email: 1413622068@qq.com
+#    concat: 北鸿
+#    url:
+#    version: v4.0
+#    license: Apache 2.0
+#    license-url: https://stackoverflow.com/
+#    terms-of-service-url: https://stackoverflow.com/
+#    group:
+#      default:
+#        group-name: default
+#        api-rule: package
+#        api-rule-resources:
+#        - com.jun.usercenter.controller

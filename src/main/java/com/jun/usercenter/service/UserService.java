@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.jun.usercenter.model.domain.User;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
 /**
@@ -43,5 +44,40 @@ public interface UserService extends IService<User> {
       * 用户注销
       */
      void userLogOut(HttpServletRequest request);
+
+     /**
+      * 根据标签搜索用户
+      * @return List<User>
+      */
+     List<User> searchUserByTags(List<String> tagList);
+
+     /**
+      * 获取当前用户
+      * @return User
+      */
+    User getUserLogin(HttpServletRequest request);
+
+     /**
+      * 更新用户
+      * @return int
+      */
+    int updateUser(User loginUser, User currentUser);
+
+    /**
+     * 管理检权
+     * @param request
+     * @return
+     */
+    public boolean isAdmin(HttpServletRequest request);
+    public boolean isAdmin(User loginUser);
+
+
+    /**
+     * 按标签匹配用户
+     * @param loginUser
+     * @param num
+     * @return
+     */
+    List<User> matchUsers(User loginUser, long num);
 
 }
